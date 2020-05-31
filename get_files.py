@@ -1,7 +1,12 @@
 import owncloud
 
-oc = owncloud.Client('https://nc.nl.tab.digital/')
-oc.login('your_login', 'your_password')
+LOGIN = 'your_login'
+PWD = 'your_password'
+PATH = 'testdir'
 
-for file in oc.list('testdir'):
-    oc.get_file(file.path)
+
+nc = owncloud.Client('https://nc.nl.tab.digital/')
+nc.login(LOGIN, PWD)
+
+for file in nc.list(PATH):
+    nc.get_file(file.path)
