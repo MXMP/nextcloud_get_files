@@ -1,6 +1,6 @@
 # Подготовка
 
- Ставим зависимости `pip install -r requirements.txt`
+ Ставим зависимости `pip3 install -r requirements.txt`
 
  Библиотечка сделана для OwnCloud, но прекрасно работает и с Nextcloud.
 
@@ -10,6 +10,6 @@
 
 # Запуск
 
-`python get_files.py`
+`python3 get_files.py`
 
 Все файлы из папки скачаются в ту же директорию, где лижит скриптик.
